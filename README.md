@@ -7,11 +7,11 @@ The training data, comprising time series of features store_nbr, family, and onp
 
 The test data, having the same features as the training data. You will predict the target sales for the dates in this file. The dates in the test data are for the 15 days after the last date in the training data.
 
-### Goal
+## Goal
 The goal of this project is to build a time series forecasting model that can accurately predict the sales of a product family at a given store for the next 15 days based on historical sales and promotional data.
 
 ### Dataset
-The dataset used for this project is available on Kaggle: https://www.kaggle.com/competitions/store-sales-time-series-forecasting/
+The dataset used for this project is available on Kaggle: [dataset](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/)
 
 The dataset contains two CSV files: train.csv and test.csv.
 
@@ -21,7 +21,7 @@ This file contains the training data, comprising time series of features store_n
 test.csv
 This file contains the test data, having the same features as the training data. You will predict the target sales for the dates in this file. The dates in the test data are for the 15 days after the last date in the training data.
 
-### Models
+## Models
 In this project, we have used three different models to forecast sales. These models are:
 
 * CNN Model
@@ -35,9 +35,9 @@ The CNN model takes the time series data as input and uses a 1D convolutional la
 The LSTM model takes the time series data as input and uses a sequence of LSTM layers to extract features from the time series. The output of the LSTM layers is then passed through a fully connected layer and a final output layer to generate the forecast.
 
 **CNN-LSTM Mode**l\
-The CNN-LSTM model combines the advantages of both CNN and LSTM models. The time series data is first passed through a 1D convolutional layer to extract features. The output of the convolutional layer is then passed through a sequence of LSTM layers to extract temporal dependencies in the data. Finally, the output of the LSTM layers is passed through a fully connected layer and a final output layer to generate the forecast.
+The CNN-LSTM model combines the advantages of both CNN and LSTM models. The time series data is first passed through a 1D convolutional layer to extract features.The output of the convolutional layer is then passed through a sequence of LSTM layers to extract temporal dependencies in the data. Finally, the output of the LSTM layers is passed through a fully connected layer and a final output layer to generate the forecast.
 
-### Methodology
+## Methodology
 The methodology used in this project involves the following steps:
 
 **Data preprocessing**: The first step is to preprocess the data to ensure that it is suitable for analysis. This involves tasks such as data cleaning, imputation of missing values, and feature engineering.
@@ -61,10 +61,8 @@ Scikit-learn\
 Matplotlib\
 TensorFlow/Keras
 ### Files
-The following files are included in this project:
 
-'train.csv': the training data\
-'test.csv': the test data\
 'store_sales_forecasting.ipynb': a Jupyter Notebook containing the code for this project
+
 ### Conclusion
 This project involves building a time series forecasting model to predict the sales of a product family at a given store. The data used in this project is provided by Kaggle and consists of historical sales and promotional data. The methodology used in this project involves data preprocessing, exploratory data analysis, time series forecasting model selection, model training and evaluation, and model deployment. The final model can be used to make predictions about future sales based on historical data.
