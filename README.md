@@ -1,8 +1,7 @@
 # Store-Sales-Univariate-Time-Series-Forecasting
 
 
-This project is about forecasting the sales of a product family at a given store. The dataset used in this project is provided by Kaggle and consists of two files: train.csv and test.csv. The data contains time series of features such as store_nbr, family, onpromotion, and sales.
-
+This project is about forecasting the sales of a product family at a given store. 
 ### Dataset Description
 The training data, comprising time series of features store_nbr, family, and onpromotion as well as the target sales. store_nbr identifies the store at which the products are sold. family identifies the type of product sold. sales gives the total sales for a product family at a particular store at a given date. Fractional values are possible since products can be sold in fractional units (1.5 kg of cheese, for instance, as opposed to 1 bag of chips). onpromotion gives the total number of items in a product family that were being promoted at a store at a given date.
 
@@ -29,13 +28,13 @@ In this project, we have used three different models to forecast sales. These mo
 * LSTM Model
 * CNN-LSTM Model
 
-CNN Model\
+**CNN Model**\
 The CNN model takes the time series data as input and uses a 1D convolutional layer to extract features from the time series. The output of the convolutional layer is then passed through a fully connected layer and a final output layer to generate the forecast.
 
-LSTM Model\
+**LSTM Model**\
 The LSTM model takes the time series data as input and uses a sequence of LSTM layers to extract features from the time series. The output of the LSTM layers is then passed through a fully connected layer and a final output layer to generate the forecast.
 
-CNN-LSTM Model\
+**CNN-LSTM Mode**l\
 The CNN-LSTM model combines the advantages of both CNN and LSTM models. The time series data is first passed through a 1D convolutional layer to extract features. The output of the convolutional layer is then passed through a sequence of LSTM layers to extract temporal dependencies in the data. Finally, the output of the LSTM layers is passed through a fully connected layer and a final output layer to generate the forecast.
 
 ### Methodology
